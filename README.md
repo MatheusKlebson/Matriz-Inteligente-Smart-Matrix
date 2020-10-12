@@ -4,7 +4,7 @@
 TAREFAS
 =========================================
 1. - [x] FORMAR A MATRIZ
-2. - [ ] MELHORAR VISUAL
+2. - [X] MELHORAR VISUAL
 2. - [ ] ADICIONAR MENU DE OPÇÕES
 3. - [ ] ADICIONAR MAIS USABILIDADE COM O USUÁRIO
 5. - [ ] INTERATIVIDADE COM O MENU DE OPÇÕES
@@ -19,7 +19,7 @@ TAREFAS
 TASKS
 ===========================================
 1. - [x] FORM THE MATRIX
-2. - [ ] IMPROVE LOOK
+2. - [X] IMPROVE LOOK
 2. - [ ] ADD OPTIONS MENU
 3. - [ ] ADD MORE USABILITY WITH USER
 5. - [ ] INTERACTIVITY WITH THE OPTIONS MENU
