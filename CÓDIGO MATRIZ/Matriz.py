@@ -24,3 +24,13 @@ opção = int(input('''[1] - ANALISAR LINHA
 [5] - CRIAR OUTRA MATRIZ
 [6] - SAIR DO PROGRAMA
 Digite: '''))
+if opção == 1:
+    escolha = int(input("Deseja analisar qual linha? "))
+    if escolha == 1:
+        print(f"[{matriz[0]}]")
+    if escolha == 2:
+        print(f"[{matriz[1]}]")
+    if escolha == 3:
+        print(f"[{matriz[2]}]")
+    else:
+        print(f"Linha {escolha} não existe")
