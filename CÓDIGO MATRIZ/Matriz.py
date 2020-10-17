@@ -3,6 +3,8 @@ def cabeçalho(txt):
     print("="*tam)
     print(txt)
     print("="*tam)
+def mostraLinha():
+    print("="*52)
 
 
 cabeçalho("               MATRIZ INTELIGENTE              ")
@@ -15,7 +17,7 @@ for l in range(0,3):
     for c in range(0,3):
         print(f"[{matriz[l][c]:^5}]",end=" ")
     print()
-print("="*52)
+mostraLinha()
 cabeçalho("                 MENU DE OPÇÕES                ")
 opção = int(input('''[1] - ANALISAR LINHA
 [2] - ANALISAR COLUNA
@@ -24,13 +26,15 @@ opção = int(input('''[1] - ANALISAR LINHA
 [5] - CRIAR OUTRA MATRIZ
 [6] - SAIR DO PROGRAMA
 Digite: '''))
+mostraLinha()
 if opção == 1:
     escolha = int(input("Deseja analisar qual linha? "))
+    print(f"LINHA {escolha}: ",end="")
     if escolha == 1:
-        print(f"[{matriz[0]}]")
-    if escolha == 2:
-        print(f"[{matriz[1]}]")
-    if escolha == 3:
-        print(f"[{matriz[2]}]")
+        print(f"{matriz[0]}")
+    elif escolha == 2:
+        print(f"{matriz[1]}")
+    elif escolha == 3:
+        print(f"{matriz[2]}")
     else:
-        print(f"Linha {escolha} não existe")
+        print(f"não existe")
