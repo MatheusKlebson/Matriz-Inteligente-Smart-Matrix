@@ -3,6 +3,8 @@ def cabeçalho(txt):
     print("="*tam)
     print(txt)
     print("="*tam)
+
+
 def mostraLinha():
     print("="*52)
 
