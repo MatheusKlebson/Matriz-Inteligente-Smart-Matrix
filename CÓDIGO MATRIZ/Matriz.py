@@ -32,13 +32,15 @@ mostraLinha()
 if opção == 1:
     escolha = int(input("Deseja analisar qual linha? "))
     print(f"LINHA {escolha}: ",end="")
-    if escolha == 1:
-        print(f"{matriz[0]}")
-    elif escolha == 2:
-        print(f"{matriz[1]}")
-    elif escolha == 3:
-        print(f"{matriz[2]}")
-    else:
+    for l in range(0,1):
+        for c in range(0,3):
+            if escolha == 1:
+                print(f"[{matriz[0][c]}]",end=' ')
+            elif escolha == 2:
+                print(f"[{matriz[1][c]}]",end=' ')
+            elif escolha == 3:
+                print(f"[{matriz[2][c]}]",end=' ')
+    if escolha > 3 or escolha < 1:
         print(f"não existe")
 elif opção == 2:
     escolha = int(input("Deseja analisar qual coluna? "))
@@ -51,5 +53,6 @@ elif opção == 2:
                 print(f"[{matriz[l][1]}]",end=' ')
             elif escolha == 3:
                 print(f"[{matriz[l][2]}]",end=' ')
-            
+    if escolha > 3 or escolha <= 0:
+        print(f"não existe")        
         
