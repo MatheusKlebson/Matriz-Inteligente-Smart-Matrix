@@ -40,3 +40,16 @@ if opção == 1:
         print(f"{matriz[2]}")
     else:
         print(f"não existe")
+elif opção == 2:
+    escolha = int(input("Deseja analisar qual coluna? "))
+    print(f"COLUNA {escolha}: ",end="")
+    for l in range(0,3):
+        for c in range(0,1):
+            if escolha == 1:
+                print(f"[{matriz[l][0]}]",end=' ')
+            elif escolha == 2:
+                print(f"[{matriz[l][1]}]",end=' ')
+            elif escolha == 3:
+                print(f"[{matriz[l][2]}]",end=' ')
+            
+        
