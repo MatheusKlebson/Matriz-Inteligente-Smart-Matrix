@@ -40,6 +40,8 @@ if opção == 1:
                 print(f"[{matriz[1][c]}]",end=' ')
             elif escolha == 3:
                 print(f"[{matriz[2][c]}]",end=' ')
+    if escolha > 3 or escolha <= 0:
+        print(f"não existe")
 elif opção == 2:
     escolha = int(input("Deseja analisar qual coluna? "))
     print(f"COLUNA {escolha}: ",end="")
@@ -51,6 +53,11 @@ elif opção == 2:
                 print(f"[{matriz[l][1]}]",end=' ')
             elif escolha == 3:
                 print(f"[{matriz[l][2]}]",end=' ')
-if escolha > 3 or escolha <= 0:
-    print(f"não existe")        
-        
+    if escolha > 3 or escolha <= 0:
+        print(f"não existe")
+elif opção == 3:
+    print("Deseja analisar qual posição? Exemplo: [0,0] ")
+    linha = int(input("["))
+    coluna = int(input(f"[{linha},"))
+    print(f"POSIÇÃO: [{linha},{coluna}]")
+    
