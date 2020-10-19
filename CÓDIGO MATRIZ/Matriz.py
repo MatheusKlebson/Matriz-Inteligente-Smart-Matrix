@@ -63,4 +63,9 @@ elif opção == 3:
     for i,ma in enumerate(matriz):
         if li == i: 
             print(f"Número na posição [{li},{co}]: {matriz[li][co]}")
+    print(f"POSIÇÃO: [{li},{co}]")
+    if li >= 3 or li < 0:
+        print(f"Linha indicada: não existe")
+    if co >= 3 or co < 0: 
+        print(f"Coluna indicada: não existe")
 print("="*50)
