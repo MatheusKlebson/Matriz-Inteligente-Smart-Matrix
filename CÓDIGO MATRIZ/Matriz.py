@@ -19,6 +19,7 @@ for l in range(0,3):
     for c in range(0,3):
         print(f"[{matriz[l][c]:^5}]",end=" ")
     print()
+'''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
 mostraLinha()
 cabeçalho("                 MENU DE OPÇÕES                ")
 opção = int(input('''[1] - ANALISAR LINHA
@@ -57,7 +58,9 @@ elif opção == 2:
         print(f"não existe")
 elif opção == 3:
     print("Deseja analisar qual posição? Exemplo: [0,0] ")
-    linha = int(input("["))
-    coluna = int(input(f"[{linha},"))
-    print(f"POSIÇÃO: [{linha},{coluna}]")
-    
+    li = int(input("["))
+    co = int(input(f"[{li},"))
+    for i,ma in enumerate(matriz):
+        if li == i: 
+            print(f"Número na posição [{li},{co}]: {matriz[li][co]}")
+print("="*50)
