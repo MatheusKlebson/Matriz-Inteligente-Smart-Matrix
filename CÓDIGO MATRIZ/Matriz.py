@@ -68,4 +68,13 @@ elif opção == 3:
         print(f"Linha indicada: não existe")
     if co >= 3 or co < 0: 
         print(f"Coluna indicada: não existe")
+elif opção == 4:
+    l1 = int(input("Qual linha se encontra o primeiro número? "))
+    c1 = int(input("Qual coluna está o número? "))
+    n1 = matriz[l1][c1]
+    l2 = int(input("Qual linha se encontra o segundo número? "))
+    c2 = int(input("Qual coluna está o número? "))
+    n2 = matriz[l2][c2]
+    print(f"Posição do número {n1}: [{l1},{c1}] ")
+    print(f"Posição do número {n2}: [{l2},{c2}] ")
 print("="*50)
