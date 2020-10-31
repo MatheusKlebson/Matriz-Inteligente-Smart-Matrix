@@ -75,6 +75,15 @@ elif opção == 4:
     l2 = int(input("Qual linha se encontra o segundo número? "))
     c2 = int(input("Qual coluna está o número? "))
     n2 = matriz[l2][c2]
-    print(f"Posição do número {n1}: [{l1},{c1}] ")
-    print(f"Posição do número {n2}: [{l2},{c2}] ")
+    cabeçalho("POSIÇÕES ESCOLHIDAS")
+    print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")
+    print(f"SEGUNDO NÚMERO ({n2}): [{l2},{c2}] ")
+    cabeçalho("O QUE DESEJA? ")
+    calcular_numeros = int(input('''[1] - SOMAR
+[2] - SUBTRAIR
+[3] - MULTIPLICAR
+[4] - DIVIDIR
+[5] - SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO
+[6] - SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO
+Digite: '''))
 print("="*50)
