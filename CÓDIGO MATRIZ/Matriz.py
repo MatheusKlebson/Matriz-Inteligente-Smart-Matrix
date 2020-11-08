@@ -1,13 +1,4 @@
-def cabeçalho(txt):
-    tam = len(txt) + 5
-    print("="*tam)
-    print(txt)
-    print("="*tam)
-
-
-def mostraLinha():
-    print("="*52)
-
+from matdef.matheus import *
 
 cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
