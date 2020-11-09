@@ -13,13 +13,11 @@ def mostraLinha(tamanho):
     print("="*tamanho)
 
 def menu(lista):
-    cabeçalho("MENU DO SISTEMA")
     for i,opções in enumerate(lista):
         print(f"{i + 1} - {opções}")
-    print(mostraLinha(52))
+    mostraLinha(52)
     opc = leiaInt("Sua opção: ")
     return opc
-
 
 def leiaInt(mensagem):
     while True:

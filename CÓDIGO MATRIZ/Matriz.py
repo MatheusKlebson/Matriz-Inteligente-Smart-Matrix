@@ -13,13 +13,8 @@ for l in range(0,3):
 '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
 mostraLinha(52)
 cabeçalho("                 MENU DE OPÇÕES                ")
-opção = int(input('''[1] - ANALISAR LINHA
-[2] - ANALISAR COLUNA
-[3] - ANALISAR NÚMERO PELA POSIÇÃO
-[4] - CALCULAR NÚMEROS ESPECIFICOS
-[5] - CRIAR OUTRA MATRIZ
-[6] - SAIR DO PROGRAMA
-Digite: '''))
+opção = menu(["ANALISAR LINHA","ANALISAR COLUNA","ANALISAR NÚMERO PELA POSIÇÃO",
+"CALCULAR NÚMEROS ESPECIFICOS","CRIAR OUTRA MATRIZ","SAIR DO PROGRAMA"])
 mostraLinha(52)
 if opção == 1:
     escolha = int(input("Deseja analisar qual linha? "))
