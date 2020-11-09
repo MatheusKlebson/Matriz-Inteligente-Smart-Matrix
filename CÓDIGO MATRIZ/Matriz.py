@@ -1,4 +1,5 @@
-from matdef.matheus import *
+from matdef.matheus import matheus_texto
+from matdef.matheus import matheus_calculo
 
 '''Montando a matriz'''
 cabeçalho("               MATRIZ INTELIGENTE              ")
@@ -7,6 +8,7 @@ matriz = [[0,0,0],[0,0,0],[0,0,0]]
 cont = 1
 for linha in range(0,3):
     for coluna in range(0,3):
+        print(f"[{linha},{coluna}]: {cont}")
         matriz[linha][coluna] = cont
         cont += 1
 
