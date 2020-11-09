@@ -8,8 +8,9 @@ def cabeçalho(txt):
     print("="*tam)
 
 
-def mostraLinha():
-    print("="*52)
+def mostraLinha(tamanho):
+    '''Escreve uma linha na tela'''
+    print("="*tamanho)
 
 def menu(lista):
     cabeçalho("MENU DO SISTEMA")

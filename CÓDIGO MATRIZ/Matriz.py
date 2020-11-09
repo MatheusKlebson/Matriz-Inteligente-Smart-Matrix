@@ -11,7 +11,7 @@ for l in range(0,3):
         print(f"[{matriz[l][c]:^5}]",end=" ")
     print()
 '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
-mostraLinha()
+mostraLinha(52)
 cabeçalho("                 MENU DE OPÇÕES                ")
 opção = int(input('''[1] - ANALISAR LINHA
 [2] - ANALISAR COLUNA
@@ -20,7 +20,7 @@ opção = int(input('''[1] - ANALISAR LINHA
 [5] - CRIAR OUTRA MATRIZ
 [6] - SAIR DO PROGRAMA
 Digite: '''))
-mostraLinha()
+mostraLinha(52)
 if opção == 1:
     escolha = int(input("Deseja analisar qual linha? "))
     print(f"LINHA {escolha}: ",end="")
