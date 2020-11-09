@@ -23,14 +23,14 @@ matheus_texto.mostraLinha(52)
 '''Menu de opções, sendo mostrado na tela 
 através de uma função para criar um menu através dos elementos contido dentro da lista'''
 
-cabeçalho("                 MENU DE OPÇÕES                ")
-opção = menu(["ANALISAR LINHA",
+matheus_texto.cabeçalho("                 MENU DE OPÇÕES                ")
+opção = matheus_texto.menu(["ANALISAR LINHA",
 "ANALISAR COLUNA",
 "ANALISAR NÚMERO PELA POSIÇÃO",
 "CALCULAR NÚMEROS ESPECIFICOS",
 "CRIAR OUTRA MATRIZ",
 "SAIR DO PROGRAMA"])
-mostraLinha(52)
+matheus_texto.mostraLinha(52)
 
 '''Condicionais para executar a opção selecionada pelo usuário'''
 
@@ -79,10 +79,10 @@ elif opção == 4:
     l2 = int(input("Qual linha se encontra o segundo número? "))
     c2 = int(input("Qual coluna está o número? "))
     n2 = matriz[l2][c2]
-    cabeçalho("POSIÇÕES ESCOLHIDAS")
+    matheus_texto.cabeçalho("POSIÇÕES ESCOLHIDAS")
     print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")
     print(f"SEGUNDO NÚMERO ({n2}): [{l2},{c2}] ")
-    cabeçalho("O QUE DESEJA? ")
+    matheus_texto.cabeçalho("O QUE DESEJA? ")
     calcular_numeros = int(input('''[1] - SOMAR
 [2] - SUBTRAIR
 [3] - MULTIPLICAR
@@ -91,4 +91,4 @@ elif opção == 4:
 [6] - SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO
 Digite: '''))
 print()
-mostraLinha(52)
+matheus_texto.mostraLinha(52)
