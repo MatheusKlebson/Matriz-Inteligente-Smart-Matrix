@@ -1,21 +1,26 @@
 from matdef.matheus import *
 
+'''Montando a matriz'''
 cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
+'''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
 cont = 1
 for linha in range(0,3):
     for coluna in range(0,3):
         matriz[linha][coluna] = cont
         cont += 1
 
+'''Matriz formada e mostrada na tela'''
 cabeçalho("                 MATRIZ FORMADA                ")
 for l in range(0,3):
     for c in range(0,3):
         print(f"[{matriz[l][c]:^5}]",end=" ")
     print()
-'''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
-
 mostraLinha(52)
+
+'''Menu de opções, sendo mostrado na tela 
+através de uma função para criar um menu através dos elementos contido dentro da lista'''
+
 cabeçalho("                 MENU DE OPÇÕES                ")
 opção = menu(["ANALISAR LINHA",
 "ANALISAR COLUNA",
@@ -24,7 +29,9 @@ opção = menu(["ANALISAR LINHA",
 "CRIAR OUTRA MATRIZ",
 "SAIR DO PROGRAMA"])
 mostraLinha(52)
+
 '''Condicionais para executar a opção selecionada pelo usuário'''
+
 if opção == 1:
     escolha = int(input("Deseja analisar qual linha? "))
     print(f"LINHA {escolha}: ",end="")
