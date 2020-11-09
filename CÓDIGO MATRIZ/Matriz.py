@@ -15,8 +15,12 @@ for l in range(0,3):
 '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
 mostraLinha(52)
 cabeçalho("                 MENU DE OPÇÕES                ")
-opção = menu(["ANALISAR LINHA","ANALISAR COLUNA","ANALISAR NÚMERO PELA POSIÇÃO",
-"CALCULAR NÚMEROS ESPECIFICOS","CRIAR OUTRA MATRIZ","SAIR DO PROGRAMA"])
+opção = menu(["ANALISAR LINHA",
+"ANALISAR COLUNA",
+"ANALISAR NÚMERO PELA POSIÇÃO",
+"CALCULAR NÚMEROS ESPECIFICOS",
+"CRIAR OUTRA MATRIZ",
+"SAIR DO PROGRAMA"])
 mostraLinha(52)
 if opção == 1:
     escolha = int(input("Deseja analisar qual linha? "))
@@ -75,4 +79,4 @@ elif opção == 4:
 [6] - SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO
 Digite: '''))
 print()
-print("="*50)
+mostraLinha(52)
