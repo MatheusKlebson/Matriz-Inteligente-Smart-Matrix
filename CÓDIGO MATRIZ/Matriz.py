@@ -2,9 +2,11 @@ from matdef.matheus import *
 
 cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
+cont = 1
 for linha in range(0,3):
     for coluna in range(0,3):
-        matriz[linha][coluna] = int(input(f"Digite o valor da casa [{linha},{coluna}]: "))
+        matriz[linha][coluna] = cont
+        cont += 1
 cabeçalho("                 MATRIZ FORMADA                ")
 for l in range(0,3):
     for c in range(0,3):
@@ -72,4 +74,5 @@ elif opção == 4:
 [5] - SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO
 [6] - SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO
 Digite: '''))
+print()
 print("="*50)
