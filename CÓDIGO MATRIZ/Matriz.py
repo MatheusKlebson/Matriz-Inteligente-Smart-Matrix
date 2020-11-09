@@ -1,8 +1,8 @@
-from matdef.matheus import matheus_texto
-from matdef.matheus import matheus_calculo
+from matdef import matheus_texto
+from matdef import matheus_calculo
 
 '''Montando a matriz'''
-cabeçalho("               MATRIZ INTELIGENTE              ")
+matheus_texto.cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
 '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
 cont = 1
@@ -13,12 +13,12 @@ for linha in range(0,3):
         cont += 1
 
 '''Matriz formada e mostrada na tela'''
-cabeçalho("                 MATRIZ FORMADA                ")
+matheus_texto.cabeçalho("                 MATRIZ FORMADA                ")
 for l in range(0,3):
     for c in range(0,3):
         print(f"[{matriz[l][c]:^5}]",end=" ")
     print()
-mostraLinha(52)
+matheus_texto.mostraLinha(52)
 
 '''Menu de opções, sendo mostrado na tela 
 através de uma função para criar um menu através dos elementos contido dentro da lista'''
