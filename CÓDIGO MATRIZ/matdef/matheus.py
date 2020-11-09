@@ -1,4 +1,7 @@
 def cabeçalho(txt):
+    '''
+    PARAM txt: Recebe o texto que ficará no centro do cabeçalho
+    '''
     tam = len(txt) + 5
     print("="*tam)
     print(txt)
