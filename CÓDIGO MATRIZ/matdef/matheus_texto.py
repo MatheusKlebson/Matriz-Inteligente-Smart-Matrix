@@ -1,3 +1,5 @@
+from matdef import matheus_calculo
+
 def cabeçalho(txt):
     '''
     PARAM txt: Recebe o texto que ficará no centro do cabeçalho
@@ -16,6 +18,6 @@ def menu(lista):
     for i,opções in enumerate(lista):
         print(f"{i + 1} - {opções}")
     mostraLinha(52)
-    opc = leiaInt("Sua opção: ")
+    opc = matheus_calculo.leiaInt("Sua opção: ")
     return opc
 
