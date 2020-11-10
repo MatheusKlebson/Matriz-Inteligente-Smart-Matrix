@@ -78,22 +78,23 @@ elif opção == 3: #Executa a terceira opção do menu
             print(f"Número encontrado: {matriz[li][co]}")
     '''Posição solicitada é mostrada na tela'''
     print(f"POSIÇÃO: [{li},{co}]")
+    '''Dois If para caso a coluna ou a linha seja inválida'''
     if li >= 3 or li < 0:
         print(f"Linha indicada: não existe")
     if co >= 3 or co < 0: 
         print(f"Coluna indicada: não existe")
-elif opção == 4:
-    l1 = int(input("Qual linha se encontra o primeiro número? "))
-    c1 = int(input("Qual coluna está o número? "))
+elif opção == 4: #Executa a quarta opção do menu
+    l1 = leiaInt("Qual linha se encontra o primeiro número? "))
+    c1 = leiaInt("Qual coluna está o número? "))
     n1 = matriz[l1][c1]
-    l2 = int(input("Qual linha se encontra o segundo número? "))
-    c2 = int(input("Qual coluna está o número? "))
+    l2 = leiaInt("Qual linha se encontra o segundo número? "))
+    c2 = leiaInt("Qual coluna está o número? "))
     n2 = matriz[l2][c2]
     cabeçalho("POSIÇÕES ESCOLHIDAS")
     print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")
     print(f"SEGUNDO NÚMERO ({n2}): [{l2},{c2}] ")
     cabeçalho("O QUE DESEJA? ")
-    calcular_numeros = int(input('''[1] - SOMAR
+    calcular_numeros = leiaInt('''[1] - SOMAR
 [2] - SUBTRAIR
 [3] - MULTIPLICAR
 [4] - DIVIDIR
