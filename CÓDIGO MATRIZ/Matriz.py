@@ -47,12 +47,14 @@ if opção == 1: #Executa a primeira opção do menu
                 print(f"[{matriz[1][c]}]",end=' ')
             elif escolha == 3:
                 print(f"[{matriz[2][c]}]",end=' ')
-    '''Caso a opção digitada pelo usuário seja invalida'''
+    '''Caso a opção digitada pelo usuário seja inválida'''
     if escolha > 3 or escolha <= 0:
         print(f"não existe")
-elif opção == 2:
-    escolha = int(input("Deseja analisar qual coluna? "))
+elif opção == 2: #Executa a segunda opção do menu
+    escolha = int(input("Deseja analisar qual coluna? "))  #Pergunta ao usuário qual coluna irá pegar os valores
+    '''Mostra coluna escolhida na tela'''
     print(f"COLUNA {escolha}: ",end="")
+    '''Laço For que irá "andar" sobre toda a matriz para mostrar os valores pedidos'''
     for l in range(0,3):
         for c in range(0,1):
             if escolha == 1:
@@ -61,6 +63,7 @@ elif opção == 2:
                 print(f"[{matriz[l][1]}]",end=' ')
             elif escolha == 3:
                 print(f"[{matriz[l][2]}]",end=' ')
+    '''Caso a opção digitada pelo usuário seja inválida'''
     if escolha > 3 or escolha <= 0:
         print(f"não existe")
 elif opção == 3:
