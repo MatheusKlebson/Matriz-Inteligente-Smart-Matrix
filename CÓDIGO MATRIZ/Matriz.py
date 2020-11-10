@@ -110,3 +110,9 @@ elif opção == 4: #Executa a quarta opção do menu
 Digite: ''')
 print()
 mostraLinha(52)
+
+
+'''BUGS PARA CORRIGIR:
+1 - NA OPÇÃO 4, CASO O USUÁRIO DIGITE UMA LINHA OU COLUNA INVALIDA O PROGRAMA PARA POR INDEXERROR
+2 - NA OPÇÃO 4, CASO O USUÁRIO SÓ QUEIRA UM NÚMERO NÃO HÁ COMO CALCULAR
+'''
