@@ -87,6 +87,7 @@ elif opção == 4: #Executa a quarta opção do menu
     posições = [] #Lista para guardar as posições
     numeros = [] #Lista para guardar os valores
     total = leiaInt("Quantos números deseja calcular? ")
+    mostraLinha(52)
     for cont in range(1,total+1):
         l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
         c = leiaInt(f"Qual coluna está o número que deseja? ")
@@ -98,21 +99,7 @@ elif opção == 4: #Executa a quarta opção do menu
     cabeçalho("POSIÇÕES ESCOLHIDAS")
     for i,tabela in enumerate(numeros):
         print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
-    
-    '''print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")'''
-    
-    #'''Conseguindo o primeiro valor'''
-    '''l1 = leiaInt("Qual linha se encontra o primeiro número? ")
-    c1 = leiaInt("Qual coluna está o número? ")
-    n1 = matriz[l1][c1]
-
-    #Conseguindo o segundo valor
-    l2 = leiaInt("Qual linha se encontra o segundo número? ")
-    c2 = leiaInt("Qual coluna está o número? ")
-    n2 = matriz[l2][c2]
-    
-    print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")
-    print(f"SEGUNDO NÚMERO ({n2}): [{l2},{c2}] ")'''
+      
     cabeçalho("O QUE DESEJA? ")
     calcular_numeros = leiaInt('''[1] - SOMAR
 [2] - SUBTRAIR
