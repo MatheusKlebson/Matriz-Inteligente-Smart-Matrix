@@ -84,11 +84,11 @@ elif opção == 3: #Executa a terceira opção do menu
     if co >= 3 or co < 0: 
         print(f"Coluna indicada: não existe")
 elif opção == 4: #Executa a quarta opção do menu
-    l1 = leiaInt("Qual linha se encontra o primeiro número? "))
-    c1 = leiaInt("Qual coluna está o número? "))
+    l1 = leiaInt("Qual linha se encontra o primeiro número? ")
+    c1 = leiaInt("Qual coluna está o número? ")
     n1 = matriz[l1][c1]
-    l2 = leiaInt("Qual linha se encontra o segundo número? "))
-    c2 = leiaInt("Qual coluna está o número? "))
+    l2 = leiaInt("Qual linha se encontra o segundo número? ")
+    c2 = leiaInt("Qual coluna está o número? ")
     n2 = matriz[l2][c2]
     cabeçalho("POSIÇÕES ESCOLHIDAS")
     print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")
@@ -100,6 +100,6 @@ elif opção == 4: #Executa a quarta opção do menu
 [4] - DIVIDIR
 [5] - SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO
 [6] - SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO
-Digite: '''))
+Digite: ''')
 print()
 mostraLinha(52)
