@@ -34,9 +34,11 @@ mostraLinha(52)
 
 '''Condicionais para executar a opção selecionada pelo usuário'''
 
-if opção == 1:
-    escolha = int(input("Deseja analisar qual linha? "))
+if opção == 1: #Executa a primeira opção do menu
+    escolha = int(input("Deseja analisar qual linha? ")) #Pergunta ao usuário qual linha irá pegar os valores
+    '''Mostra linha escolhida na tela'''
     print(f"LINHA {escolha}: ",end="")
+    '''Laço For que irá "andar" sobre toda a matriz para mostrar os valores pedidos'''
     for l in range(0,1):
         for c in range(0,3):
             if escolha == 1:
@@ -45,6 +47,7 @@ if opção == 1:
                 print(f"[{matriz[1][c]}]",end=' ')
             elif escolha == 3:
                 print(f"[{matriz[2][c]}]",end=' ')
+    '''Caso a opção digitada pelo usuário seja invalida'''
     if escolha > 3 or escolha <= 0:
         print(f"não existe")
 elif opção == 2:
