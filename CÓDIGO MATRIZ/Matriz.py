@@ -66,13 +66,17 @@ elif opção == 2: #Executa a segunda opção do menu
     '''Caso a opção digitada pelo usuário seja inválida'''
     if escolha > 3 or escolha <= 0:
         print(f"não existe")
-elif opção == 3:
+elif opção == 3: #Executa a terceira opção do menu
+    '''O usuário poderá ver um número especifico dá matriz, 
+    digitando a posição que ele se encontra'''
     print("Deseja analisar qual posição? Exemplo: [0,0] ")
-    li = int(input("["))
-    co = int(input(f"[{li},"))
+    li = int(input("[")) #Primeiro pergunta qual a linha 
+    co = int(input(f"[{li},")) #Pergunta a coluna
+    '''Laço For que irá encontrar a posição e seu especifico número, solicitado pelo usuário'''
     for i,ma in enumerate(matriz):
         if li == i: 
-            print(f"Número na posição [{li},{co}]: {matriz[li][co]}")
+            print(f"Número encontrado: {matriz[li][co]}")
+    '''Posição solicitada é mostrada na tela'''
     print(f"POSIÇÃO: [{li},{co}]")
     if li >= 3 or li < 0:
         print(f"Linha indicada: não existe")
