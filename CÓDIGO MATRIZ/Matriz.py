@@ -84,18 +84,20 @@ elif opção == 3: #Executa a terceira opção do menu
     if co >= 3 or co < 0: 
         print(f"Coluna indicada: não existe")
 elif opção == 4: #Executa a quarta opção do menu
-    numeros = []
+    posições = [] #Lista para guardar as posições
+    numeros = [] #Lista para guardar os valores
     total = leiaInt("Quantos números deseja calcular? ")
     for cont in range(1,total+1):
         l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
         c = leiaInt(f"Qual coluna está o número que deseja? ")
+        posições.append([l,c])
         num = matriz[l][c]
         numeros.append(num)
 
     '''[1num,2num,3num]'''
     cabeçalho("POSIÇÕES ESCOLHIDAS")
     for i,tabela in enumerate(numeros):
-        print(f"{i + 1} - {tabela}")
+        print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
     
     '''print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")'''
     
