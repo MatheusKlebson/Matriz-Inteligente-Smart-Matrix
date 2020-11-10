@@ -94,8 +94,10 @@ elif opção == 4: #Executa a quarta opção do menu
 
     '''[1num,2num,3num]'''
     cabeçalho("POSIÇÕES ESCOLHIDAS")
-    for indice,n in enumerate(numeros):
-        print(f" - {indice + 1}º NÚMERO ({n}): [{indice[l]},{indice[c]}] ")
+    for i,tabela in enumerate(numeros):
+        print(f"{i + 1} - {tabela}")
+    
+    '''print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")'''
     
     #'''Conseguindo o primeiro valor'''
     '''l1 = leiaInt("Qual linha se encontra o primeiro número? ")
