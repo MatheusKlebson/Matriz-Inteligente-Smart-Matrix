@@ -1,8 +1,8 @@
-from matdef import matheus_texto
-from matdef import matheus_calculo
+from matdef.matheus_texto import *
+from matdef.matheus_calculo import * 
 
 '''Montando a matriz'''
-matheus_texto.cabeçalho("               MATRIZ INTELIGENTE              ")
+cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
 '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
 cont = 1
@@ -13,24 +13,24 @@ for linha in range(0,3):
         cont += 1
 
 '''Matriz formada e mostrada na tela'''
-matheus_texto.cabeçalho("                 MATRIZ FORMADA                ")
+cabeçalho("                 MATRIZ FORMADA                ")
 for l in range(0,3):
     for c in range(0,3):
         print(f"[{matriz[l][c]:^5}]",end=" ")
     print()
-matheus_texto.mostraLinha(52)
+mostraLinha(52)
 
 '''Menu de opções, sendo mostrado na tela 
 através de uma função para criar um menu através dos elementos contido dentro da lista'''
 
-matheus_texto.cabeçalho("                 MENU DE OPÇÕES                ")
-opção = matheus_texto.menu(["ANALISAR LINHA",
+cabeçalho("                 MENU DE OPÇÕES                ")
+opção = menu(["ANALISAR LINHA",
 "ANALISAR COLUNA",
 "ANALISAR NÚMERO PELA POSIÇÃO",
 "CALCULAR NÚMEROS ESPECIFICOS",
 "CRIAR OUTRA MATRIZ",
 "SAIR DO PROGRAMA"])
-matheus_texto.mostraLinha(52)
+mostraLinha(52)
 
 '''Condicionais para executar a opção selecionada pelo usuário'''
 
@@ -79,10 +79,10 @@ elif opção == 4:
     l2 = int(input("Qual linha se encontra o segundo número? "))
     c2 = int(input("Qual coluna está o número? "))
     n2 = matriz[l2][c2]
-    matheus_texto.cabeçalho("POSIÇÕES ESCOLHIDAS")
+    cabeçalho("POSIÇÕES ESCOLHIDAS")
     print(f"PRIMEIRO NÚMERO ({n1}): [{l1},{c1}] ")
     print(f"SEGUNDO NÚMERO ({n2}): [{l2},{c2}] ")
-    matheus_texto.cabeçalho("O QUE DESEJA? ")
+    cabeçalho("O QUE DESEJA? ")
     calcular_numeros = int(input('''[1] - SOMAR
 [2] - SUBTRAIR
 [3] - MULTIPLICAR
@@ -91,4 +91,4 @@ elif opção == 4:
 [6] - SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO
 Digite: '''))
 print()
-matheus_texto.mostraLinha(52)
+mostraLinha(52)
