@@ -101,9 +101,9 @@ elif opção == 4: #Executa a quarta opção do menu
         print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
       
     cabeçalho("O QUE DESEJA? ")
-    calcular_numeros = leiaInt(menu(["SOMAR","SUBTRAIR","MULTIPLICAR","DIVIDIR",
+    calcular_numeros = menu(["SOMAR","SUBTRAIR","MULTIPLICAR","DIVIDIR",
     "SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO",
-    "SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO"]))
+    "SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO"])
 print()
 mostraLinha(52)
 
