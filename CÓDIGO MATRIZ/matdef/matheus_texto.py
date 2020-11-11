@@ -6,7 +6,7 @@ def cabeçalho(txt):
     '''
     tam = len(txt) + 5
     print("="*tam)
-    print(txt)
+    print(txt.center(tam))
     print("="*tam)
 
 
