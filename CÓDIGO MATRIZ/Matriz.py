@@ -137,3 +137,8 @@ elif opção == 4:  #Executa a quarta opção do menu
         print("O programa não pode continuar...")
         
 cabeçalho("<<<ENCERRADO>>>".center(47))
+
+
+'''
+PARA RESOLVER:
+FUNÇÃO PARA SUBSTRAIR'''
