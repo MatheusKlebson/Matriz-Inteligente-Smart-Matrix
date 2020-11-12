@@ -90,32 +90,41 @@ elif opção == 4: #Executa a quarta opção do menu
     try:
         total = leiaInt("Quantos números deseja calcular? ")
         mostraLinha(52)
-        for cont in range(1,total+1):
-            l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
+        if total > 1:
+            for cont in range(1,total+1):
+                l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
+                c = leiaInt(f"Qual coluna está o número que deseja? ")
+                posições.append([l,c])
+                num = matriz[l][c]
+                numeros.append(num)
+
+            '''[1num,2num,3num]'''
+            cabeçalho("POSIÇÕES ESCOLHIDAS")
+            for i,tabela in enumerate(numeros):
+                print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
+        
+            cabeçalho("O QUE DESEJA? ")
+            calcular_numeros = menu(["SOMAR","SUBTRAIR","MULTIPLICAR","DIVIDIR",
+            "SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO",
+            "SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO"])
+        elif total == 1:
+            l = leiaInt(f"Qual linha se encontra o número? ")
             c = leiaInt(f"Qual coluna está o número que deseja? ")
             posições.append([l,c])
             num = matriz[l][c]
             numeros.append(num)
-
-        '''[1num,2num,3num]'''
-        cabeçalho("POSIÇÕES ESCOLHIDAS")
-        for i,tabela in enumerate(numeros):
-            print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
-        
-        cabeçalho("O QUE DESEJA? ")
-        calcular_numeros = menu(["SOMAR","SUBTRAIR","MULTIPLICAR","DIVIDIR",
-        "SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO",
-        "SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO"])
-    except:
+            cabeçalho("POSIÇÃO ESCOLHIDA")
+            for i,tabela in enumerate(numeros):
+                print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
+        else:
+            print("Número não encontrado")
+    except (IndexError):
         mostraLinha(52)
         print("Você digitou um valor inválido")
         sleep(2)
         print("O programa não pode continuar...")
-        sleep(2)
-        cabeçalho("<<<ENCERRADO>>>".center(47))
-print()
-mostraLinha(52)
-
+        
+cabeçalho("<<<ENCERRADO>>>".center(47))
 
 '''BUGS PARA CORRIGIR:
 1 - NA OPÇÃO 4, CASO O USUÁRIO DIGITE UMA LINHA OU COLUNA INVALIDA O PROGRAMA PARA POR INDEXERROR
