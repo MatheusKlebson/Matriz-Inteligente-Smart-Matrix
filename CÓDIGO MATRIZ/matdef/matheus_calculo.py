@@ -36,16 +36,15 @@ def leiaDinheiro(msg):
             return float(preço)
 
 
-def factorial(calculo,show):
-    print("="*50)
+def factorial(calculo):
+    mostraLinha(52)
     f = 1
     for cont in range(calculo,0,-1):
-        if show == True:
-            print(f"{cont}",end="")
-            if cont > 1:
-                print(" X ",end="")
-            else:
-                print(" = ",end="")
+        print(f"{cont}",end="")
+        if cont > 1:
+            print(" X ",end="")
+        else:
+            print(" = ",end="")
         f *= cont
     return f
     

@@ -104,13 +104,12 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
         
             cabeçalho("O QUE DESEJA? ")
-            calcular_numeros = menu(["SOMAR","SUBTRAIR"
-            ,"MULTIPLICAR (FATORIAL)"
-            ,"DIVIDIR"])
+            calcular_numeros = menu(["SOMAR",
+            "MULTIPLICAR (FATORIAL)"])
             if calcular_numeros == 1:
                 print(f"A soma de todos os números: {sum(numeros)}")
-            if calcular_numeros == 2:
-                print(f"A subtração de todos os números: {sub(numeros)}")
+            elif calcular_numeros == 2:
+                print(factorial(sum(numeros)))
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
             c = leiaInt(f"Qual coluna está o número que deseja? ")
@@ -125,6 +124,7 @@ elif opção == 4:  #Executa a quarta opção do menu
             "Triplo",
             "Raiz Quadrada",
             "Raiz Cubica",
+            "FATORIAL",
             "BINÁRIO", 
             "HEXADECIMAL"
             "OCTAL"])
