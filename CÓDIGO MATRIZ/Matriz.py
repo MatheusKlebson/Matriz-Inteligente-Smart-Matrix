@@ -84,9 +84,9 @@ elif opção == 3: #Executa a terceira opção do menu
         print(f"Linha indicada: não existe")
     if co >= 3 or co < 0: 
         print(f"Coluna indicada: não existe")
-elif opção == 4: #Executa a quarta opção do menu
+elif opção == 4:  #Executa a quarta opção do menu
     posições = [] #Lista para guardar as posições
-    numeros = [] #Lista para guardar os valores
+    numeros = []  #Lista para guardar os valores
     try:
         total = leiaInt("Quantos números deseja calcular? ")
         mostraLinha(52)
@@ -116,6 +116,14 @@ elif opção == 4: #Executa a quarta opção do menu
             cabeçalho("POSIÇÃO ESCOLHIDA")
             for i,tabela in enumerate(numeros):
                 print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
+            cabeçalho("O QUE DESEJA? ")
+            analisar_numero = menu(["Dobro",
+            "Triplo",
+            "Raiz Quadrada",
+            "Raiz Cubica",
+            "BINÁRIO", 
+            "HEXADECIMAL"
+            "OCTAL"])
         else:
             print("Número não encontrado")
     except (IndexError):
