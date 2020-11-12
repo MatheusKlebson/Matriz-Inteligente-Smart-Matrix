@@ -105,7 +105,7 @@ elif opção == 4:  #Executa a quarta opção do menu
         
             cabeçalho("O QUE DESEJA? ")
             calcular_numeros = menu(["SOMAR","SUBTRAIR"
-            ,"MULTIPLICAR"
+            ,"MULTIPLICAR (FATORIAL)"
             ,"DIVIDIR"])
             if calcular_numeros == 1:
                 print(f"A soma de todos os números: {sum(numeros)}")

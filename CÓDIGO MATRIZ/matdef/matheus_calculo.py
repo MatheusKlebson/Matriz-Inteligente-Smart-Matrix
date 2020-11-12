@@ -35,10 +35,17 @@ def leiaDinheiro(msg):
             validar = True
             return float(preço)
 
-def sub(lista):
-    for cont,numeros in enumerate(lista):
-        print(numeros,end=" - ")
-        calculo = numeros[cont] - numeros[cont-1]
-    print(calculo)
 
+def factorial(calculo,show):
+    print("="*50)
+    f = 1
+    for cont in range(calculo,0,-1):
+        if show == True:
+            print(f"{cont}",end="")
+            if cont > 1:
+                print(" X ",end="")
+            else:
+                print(" = ",end="")
+        f *= cont
+    return f
     
