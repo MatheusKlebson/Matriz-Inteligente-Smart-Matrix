@@ -104,9 +104,13 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
         
             cabeçalho("O QUE DESEJA? ")
-            calcular_numeros = menu(["SOMAR","SUBTRAIR","MULTIPLICAR","DIVIDIR",
-            "SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO",
-            "SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO"])
+            calcular_numeros = menu(["SOMAR","SUBTRAIR"
+            ,"MULTIPLICAR"
+            ,"DIVIDIR"])
+            if calcular_numeros == 1:
+                print(f"A soma de todos os números: {sum(numeros)}")
+            if calcular_numeros == 2:
+                print(f"A subtração de todos os números: {sub(numeros)}")
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
             c = leiaInt(f"Qual coluna está o número que deseja? ")

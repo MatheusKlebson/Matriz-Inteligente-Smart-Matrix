@@ -35,3 +35,6 @@ def leiaDinheiro(msg):
             validar = True
             return float(preço)
 
+def sub(lista):
+    for cont in lista:
+        print(cont-cont)
