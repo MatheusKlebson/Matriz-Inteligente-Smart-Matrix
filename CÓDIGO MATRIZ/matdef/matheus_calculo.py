@@ -36,9 +36,9 @@ def leiaDinheiro(msg):
             return float(preço)
 
 def sub(lista):
-    for cont in sorted(lista):
-        if cont > lista[-1]:
-            print(" - ",end="")
-        else:
-            print(" = ",end="")
-        print(cont,end="")
+    for cont,numeros in enumerate(lista):
+        print(numeros,end=" - ")
+        calculo = numeros[cont] - numeros[cont-1]
+    print(calculo)
+
+    
