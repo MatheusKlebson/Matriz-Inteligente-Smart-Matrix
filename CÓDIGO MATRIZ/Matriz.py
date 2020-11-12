@@ -1,5 +1,6 @@
 from matdef.matheus_texto import *
 from matdef.matheus_calculo import * 
+from time import sleep
 
 '''Montando a matriz'''
 cabeçalho("               MATRIZ INTELIGENTE              ")
@@ -86,24 +87,32 @@ elif opção == 3: #Executa a terceira opção do menu
 elif opção == 4: #Executa a quarta opção do menu
     posições = [] #Lista para guardar as posições
     numeros = [] #Lista para guardar os valores
-    total = leiaInt("Quantos números deseja calcular? ")
-    mostraLinha(52)
-    for cont in range(1,total+1):
-        l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
-        c = leiaInt(f"Qual coluna está o número que deseja? ")
-        posições.append([l,c])
-        num = matriz[l][c]
-        numeros.append(num)
+    try:
+        total = leiaInt("Quantos números deseja calcular? ")
+        mostraLinha(52)
+        for cont in range(1,total+1):
+            l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
+            c = leiaInt(f"Qual coluna está o número que deseja? ")
+            posições.append([l,c])
+            num = matriz[l][c]
+            numeros.append(num)
 
-    '''[1num,2num,3num]'''
-    cabeçalho("POSIÇÕES ESCOLHIDAS")
-    for i,tabela in enumerate(numeros):
-        print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
-      
-    cabeçalho("O QUE DESEJA? ")
-    calcular_numeros = menu(["SOMAR","SUBTRAIR","MULTIPLICAR","DIVIDIR",
-    "SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO",
-    "SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO"])
+        '''[1num,2num,3num]'''
+        cabeçalho("POSIÇÕES ESCOLHIDAS")
+        for i,tabela in enumerate(numeros):
+            print(f"{i + 1}º - ({tabela}): [{posições[i][0]},{posições[i][1]}]")
+        
+        cabeçalho("O QUE DESEJA? ")
+        calcular_numeros = menu(["SOMAR","SUBTRAIR","MULTIPLICAR","DIVIDIR",
+        "SOMAR E TIRAR A RAIZ QUADRADA DO RESULTADO",
+        "SOMAR E EM SEGUIDA TIRAR O NÚMERO BINÁRIO, HEXADECIMAL OU OCTAL DO RESULTADO"])
+    except:
+        mostraLinha(52)
+        print("Você digitou um valor inválido")
+        sleep(2)
+        print("O programa não pode continuar...")
+        sleep(2)
+        cabeçalho("<<<ENCERRADO>>>".center(47))
 print()
 mostraLinha(52)
 
