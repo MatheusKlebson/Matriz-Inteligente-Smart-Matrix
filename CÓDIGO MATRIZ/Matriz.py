@@ -28,7 +28,7 @@ cabeçalho("                 MENU DE OPÇÕES                ")
 opção = menu(["ANALISAR LINHA",
 "ANALISAR COLUNA",
 "ANALISAR NÚMERO PELA POSIÇÃO",
-"CALCULAR NÚMEROS ESPECIFICOS",
+"TRABALHAR COM NÚMEROS ESPECIFICOS",
 "CRIAR OUTRA MATRIZ",
 "SAIR DO PROGRAMA"])
 mostraLinha(52)
@@ -125,6 +125,21 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"O maior número: {max(numeros)}")
             elif calcular_numeros == 4:
                 print(f"O menor número: {min(numeros)}")
+            elif calcular_numeros == 5: 
+                pares = []
+                
+                    if numeros[cont] % 2 == 0:
+                        pares.append(num)
+                    else:
+                        impares.append(num)
+                    opção = " "
+                    while not opção in "SN":
+                        opção = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
+                    if opção == "N":
+                        break
+                print(f"Lista: {lista}")
+                print(f"Lista dos pares: {pares}")
+                print(f"Lista dos ímpares: {impares}")
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
             c = leiaInt(f"Qual coluna está o número que deseja? ")
