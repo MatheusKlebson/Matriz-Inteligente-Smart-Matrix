@@ -127,18 +127,10 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"O menor número: {min(numeros)}")
             elif calcular_numeros == 5: 
                 pares = []
-                
-                    if numeros[cont] % 2 == 0:
+                for cont,num in enumerate(numeros):
+                    if num[cont] % 2 == 0:
                         pares.append(num)
-                
-                    opção = " "
-                    while not opção in "SN":
-                        opção = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
-                    if opção == "N":
-                        break
-                print(f"Lista: {lista}")
                 print(f"Lista dos pares: {pares}")
-                print(f"Lista dos ímpares: {impares}")
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
             c = leiaInt(f"Qual coluna está o número que deseja? ")
@@ -167,6 +159,3 @@ elif opção == 4:  #Executa a quarta opção do menu
         
 cabeçalho("<<<ENCERRADO>>>".center(47))
 
-'''
-PARA RESOLVER:
-FUNÇÃO PARA SUBSTRAIR'''
