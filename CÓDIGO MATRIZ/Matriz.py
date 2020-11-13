@@ -130,8 +130,7 @@ elif opção == 4:  #Executa a quarta opção do menu
                 
                     if numeros[cont] % 2 == 0:
                         pares.append(num)
-                    else:
-                        impares.append(num)
+                
                     opção = " "
                     while not opção in "SN":
                         opção = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
@@ -167,7 +166,6 @@ elif opção == 4:  #Executa a quarta opção do menu
         print("O programa não pode continuar...")
         
 cabeçalho("<<<ENCERRADO>>>".center(47))
-
 
 '''
 PARA RESOLVER:
