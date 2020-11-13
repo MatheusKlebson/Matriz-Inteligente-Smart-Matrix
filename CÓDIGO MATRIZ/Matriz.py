@@ -181,11 +181,11 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"Fatorial de {num}")
                 print(factorial(num))
             elif analisar_numero == 6:
-                print(f"Binário de {num}: {bin(num[2:])}")
+                print(f"Binário de {num}: {bin(num)[2:]}")
             elif analisar_numero == 7:
-                print(f"Hexadecimal de {num}: {hex(num)}")
+                print(f"Hexadecimal de {num}: {hex(num)[2:]}")
             elif analisar_numero == 8:
-                print(f"Octal de {num}: {oct(num)}")
+                print(f"Octal de {num}: {oct(num)[2:]}")
         else:
             print("Número não encontrado")
     except (IndexError):
