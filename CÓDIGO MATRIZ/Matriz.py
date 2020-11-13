@@ -111,7 +111,7 @@ elif opção == 4:  #Executa a quarta opção do menu
         
             cabeçalho("O QUE DESEJA? ")
             calcular_numeros = menu(["SOMAR",
-            "SOMA E DEPOIS GERAR O FATORIAL",
+            "SOMAR E DEPOIS GERAR O FATORIAL",
             "MAIOR NÚMERO SELECIONADO",
             "MENOR NÚMERO SELECIONADO",
             "MOSTRAR TODOS OS PARES",
@@ -138,6 +138,16 @@ elif opção == 4:  #Executa a quarta opção do menu
                         num = 0
                     else:
                         ímpares.append(numeros[cont])
+                print(f"Lista dos ímpares: {ímpares}")
+            elif calcular_numeros == 7:
+                pares = []
+                ímpares = []
+                for cont in range(0,len(numeros)):
+                    if numeros[cont] % 2 == 0:
+                        pares.append(numeros[cont])
+                    else:
+                        ímpares.append(numeros[cont])
+                print(f"Lista dos pares: {pares}")
                 print(f"Lista dos ímpares: {ímpares}")
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
