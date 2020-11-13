@@ -51,6 +51,8 @@ if opção == 1: #Executa a primeira opção do menu
     '''Caso a opção digitada pelo usuário seja inválida'''
     if escolha > 3 or escolha <= 0:
         print(f"não existe")
+
+
 elif opção == 2: #Executa a segunda opção do menu
     escolha = int(input("Deseja analisar qual coluna? "))  #Pergunta ao usuário qual coluna irá pegar os valores
     '''Mostra coluna escolhida na tela'''
@@ -67,6 +69,8 @@ elif opção == 2: #Executa a segunda opção do menu
     '''Caso a opção digitada pelo usuário seja inválida'''
     if escolha > 3 or escolha <= 0:
         print(f"não existe")
+
+
 elif opção == 3: #Executa a terceira opção do menu
     '''O usuário poderá ver um número especifico dá matriz, 
     digitando a posição que ele se encontra'''
@@ -84,13 +88,15 @@ elif opção == 3: #Executa a terceira opção do menu
         print(f"Linha indicada: não existe")
     if co >= 3 or co < 0: 
         print(f"Coluna indicada: não existe")
+
+
 elif opção == 4:  #Executa a quarta opção do menu
     posições = [] #Lista para guardar as posições
     numeros = []  #Lista para guardar os valores
     try:
         total = leiaInt("Quantos números deseja calcular? ")
         mostraLinha(52)
-        if total > 1:
+        if total > 2:
             for cont in range(1,total+1):
                 l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
                 c = leiaInt(f"Qual coluna está o número que deseja? ")
@@ -105,7 +111,10 @@ elif opção == 4:  #Executa a quarta opção do menu
         
             cabeçalho("O QUE DESEJA? ")
             calcular_numeros = menu(["SOMAR",
-            "MULTIPLICAR (FATORIAL)"])
+            "SOMA E DEPOIS GERAR O FATORIAL",
+            "MAIOR NÚMERO SELECIONADO",
+            "MENOR NÚMERO SELECIONADO",
+            ""])
             if calcular_numeros == 1:
                 print(f"A soma de todos os números: {sum(numeros)}")
             elif calcular_numeros == 2:
