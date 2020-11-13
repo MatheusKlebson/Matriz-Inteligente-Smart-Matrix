@@ -2,7 +2,6 @@ from matdef.matheus_texto import *
 from matdef.matheus_calculo import * 
 from time import sleep
 
-
 '''Montando a matriz'''
 cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
