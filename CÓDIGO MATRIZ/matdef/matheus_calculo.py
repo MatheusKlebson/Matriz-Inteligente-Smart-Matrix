@@ -1,3 +1,5 @@
+from matdef import matheus_texto
+
 def leiaInt(mensagem):
     while True:
         try:
@@ -37,7 +39,7 @@ def leiaDinheiro(msg):
 
 
 def factorial(calculo):
-    mostraLinha(52)
+    matheus_texto.mostraLinha(52)
     f = 1
     for cont in range(calculo,0,-1):
         print(f"{cont}",end="")
