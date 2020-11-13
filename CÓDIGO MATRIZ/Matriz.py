@@ -112,7 +112,6 @@ elif opção == 4:  #Executa a quarta opção do menu
         
             cabeçalho("O QUE DESEJA? ")
             calcular_numeros = menu(["SOMAR",
-            "SOMAR E DEPOIS GERAR O FATORIAL",
             "MAIOR NÚMERO SELECIONADO",
             "MENOR NÚMERO SELECIONADO",
             "MOSTRAR TODOS OS PARES",
@@ -121,18 +120,16 @@ elif opção == 4:  #Executa a quarta opção do menu
             if calcular_numeros == 1:
                 print(f"A soma de todos os números: {sum(numeros)}")
             elif calcular_numeros == 2:
-                print(factorial(sum(numeros)))
-            elif calcular_numeros == 3:
                 print(f"O maior número: {max(numeros)}")
-            elif calcular_numeros == 4:
+            elif calcular_numeros == 3:
                 print(f"O menor número: {min(numeros)}")
-            elif calcular_numeros == 5: 
+            elif calcular_numeros == 4: 
                 pares = []
                 for cont in range(0,len(numeros)):
                     if numeros[cont] % 2 == 0:
                         pares.append(numeros[cont])
                 print(f"Lista dos pares: {pares}")
-            elif calcular_numeros == 6: 
+            elif calcular_numeros == 5: 
                 ímpares = []
                 for cont in range(0,len(numeros)):
                     if numeros[cont] % 2 == 0:
@@ -140,7 +137,7 @@ elif opção == 4:  #Executa a quarta opção do menu
                     else:
                         ímpares.append(numeros[cont])
                 print(f"Lista dos ímpares: {ímpares}")
-            elif calcular_numeros == 7:
+            elif calcular_numeros == 6:
                 pares = []
                 ímpares = []
                 for cont in range(0,len(numeros)):
