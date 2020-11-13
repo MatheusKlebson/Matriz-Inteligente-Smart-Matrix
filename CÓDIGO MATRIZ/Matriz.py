@@ -131,6 +131,14 @@ elif opção == 4:  #Executa a quarta opção do menu
                     if numeros[cont] % 2 == 0:
                         pares.append(numeros[cont])
                 print(f"Lista dos pares: {pares}")
+            elif calcular_numeros == 6: 
+                ímpares = []
+                for cont in range(0,len(numeros)):
+                    if numeros[cont] % 2 == 0:
+                        num = 0
+                    else:
+                        ímpares.append(numeros[cont])
+                print(f"Lista dos ímpares: {ímpares}")
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
             c = leiaInt(f"Qual coluna está o número que deseja? ")
