@@ -127,9 +127,9 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"O menor número: {min(numeros)}")
             elif calcular_numeros == 5: 
                 pares = []
-                for cont,num in enumerate(numeros):
-                    if num[cont] % 2 == 0:
-                        pares.append(num)
+                for cont in range(0,len(numeros)):
+                    if numeros[cont] % 2 == 0:
+                        pares.append(numeros[cont])
                 print(f"Lista dos pares: {pares}")
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
