@@ -167,6 +167,13 @@ elif opção == 4:  #Executa a quarta opção do menu
             "BINÁRIO", 
             "HEXADECIMAL"
             "OCTAL"])
+            if analisar_numero == 1:
+                dobro = num * 2
+                print(f"O dobro de {num}: {dobro}")
+            elif analisar_numero == 2:
+                triplo = num * 3
+                print(f"O triplo de {num}: {triplo}")
+            
         else:
             print("Número não encontrado")
     except (IndexError):
