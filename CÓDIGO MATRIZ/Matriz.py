@@ -163,7 +163,7 @@ elif opção == 4:  #Executa a quarta opção do menu
             "Raiz Cubica",
             "FATORIAL",
             "BINÁRIO", 
-            "HEXADECIMAL"
+            "HEXADECIMAL",
             "OCTAL"])
             if analisar_numero == 1:
                 dobro = num * 2
@@ -180,6 +180,12 @@ elif opção == 4:  #Executa a quarta opção do menu
             elif analisar_numero == 5:
                 print(f"Fatorial de {num}")
                 print(factorial(num))
+            elif analisar_numero == 6:
+                print(f"Binário de {num}: {bin(num[2:])}")
+            elif analisar_numero == 7:
+                print(f"Hexadecimal de {num}: {hex(num)}")
+            elif analisar_numero == 8:
+                print(f"Octal de {num}: {oct(num)}")
         else:
             print("Número não encontrado")
     except (IndexError):
