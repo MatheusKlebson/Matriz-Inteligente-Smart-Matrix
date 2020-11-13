@@ -96,7 +96,7 @@ elif opção == 4:  #Executa a quarta opção do menu
     try:
         total = leiaInt("Quantos números deseja calcular? ")
         mostraLinha(52)
-        if total > 2:
+        if total > 1:
             for cont in range(1,total+1):
                 l = leiaInt(f"Qual linha se encontra o {cont}º número? ")
                 c = leiaInt(f"Qual coluna está o número que deseja? ")
