@@ -114,11 +114,17 @@ elif opção == 4:  #Executa a quarta opção do menu
             "SOMA E DEPOIS GERAR O FATORIAL",
             "MAIOR NÚMERO SELECIONADO",
             "MENOR NÚMERO SELECIONADO",
-            ""])
+            "MOSTRAR TODOS OS PARES",
+            "MOSTRAR TODOS OS ÍMPARES",
+            "MOSTRAR DUAS LISTAS, UMA DE PARES E OUTRA DE ÍMPARES"])
             if calcular_numeros == 1:
                 print(f"A soma de todos os números: {sum(numeros)}")
             elif calcular_numeros == 2:
                 print(factorial(sum(numeros)))
+            elif calcular_numeros == 3:
+                print(f"O maior número: {max(numeros)}")
+            elif calcular_numeros == 4:
+                print(f"O menor número: {min(numeros)}")
         elif total == 1:
             l = leiaInt(f"Qual linha se encontra o número? ")
             c = leiaInt(f"Qual coluna está o número que deseja? ")
