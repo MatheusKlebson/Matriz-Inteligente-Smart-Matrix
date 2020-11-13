@@ -1,6 +1,7 @@
 from matdef.matheus_texto import *
 from matdef.matheus_calculo import * 
 from time import sleep
+from math import sqrt
 
 '''Montando a matriz'''
 cabeçalho("               MATRIZ INTELIGENTE              ")
@@ -173,6 +174,9 @@ elif opção == 4:  #Executa a quarta opção do menu
             elif analisar_numero == 2:
                 triplo = num * 3
                 print(f"O triplo de {num}: {triplo}")
+            elif analisar_numero == 3:
+                raiz_quadrada = sqrt(num)
+                print(f"A raiz quadrada de {num}: {raiz_quadrada}")
             
         else:
             print("Número não encontrado")
