@@ -9,8 +9,7 @@ matriz = [[0,0,0],[0,0,0],[0,0,0]]
 cont = 1
 for linha in range(0,3):
     for coluna in range(0,3):
-        print(f"[{linha},{coluna}]: {cont}")
-        matriz[linha][coluna] = cont
+        matriz[linha][coluna] = leiaInt(f"Digite o número [{linha},{coluna}]: ")
         cont += 1
 
 '''Matriz formada e mostrada na tela'''
@@ -53,7 +52,7 @@ if opção == 1: #Executa a primeira opção do menu
         print(f"não existe")
 
 
-if opção == 2: #Executa a segunda opção do menu
+elif opção == 2: #Executa a segunda opção do menu
     escolha = int(input("Deseja analisar qual coluna? "))  #Pergunta ao usuário qual coluna irá pegar os valores
     '''Mostra coluna escolhida na tela'''
     print(f"COLUNA {escolha}: ",end="")
@@ -71,7 +70,7 @@ if opção == 2: #Executa a segunda opção do menu
         print(f"não existe")
 
 
-if opção == 3: #Executa a terceira opção do menu
+elif opção == 3: #Executa a terceira opção do menu
     '''O usuário poderá ver um número especifico dá matriz, 
     digitando a posição que ele se encontra'''
     print("Deseja analisar qual posição? Exemplo: [0,0] ")
@@ -90,7 +89,7 @@ if opção == 3: #Executa a terceira opção do menu
         print(f"Coluna indicada: não existe")
 
 
-if opção == 4:  #Executa a quarta opção do menu
+elif opção == 4:  #Executa a quarta opção do menu
     posições = [] #Lista para guardar as posições
     numeros = []  #Lista para guardar os valores
     try:
@@ -187,9 +186,13 @@ if opção == 4:  #Executa a quarta opção do menu
                 print(f"Octal de {num}: {oct(num)[2:]}")
         else:
             print("Número não encontrado")
+    except (IndexError):
+        mostraLinha(52)
+        print("Você digitou um valor inválido")
+        sleep(2)
+        print("O programa não pode continuar...")
 
-
-if opção == 5: #Executa a quinta opção do menu
+elif opção == 5: #Executa a quinta opção do menu
     matriz.clear()
     cabeçalho("              NOVA MATRIZ              ")
     matriz = [[0,0,0],[0,0,0],[0,0,0]]
@@ -197,8 +200,7 @@ if opção == 5: #Executa a quinta opção do menu
     cont = 1
     for linha in range(0,3):
         for coluna in range(0,3):
-            print(f"[{linha},{coluna}]: {cont}")
-            matriz[linha][coluna] = leiaInt(f"Digite o número na posição [{linha},{coluna}]")
+            matriz[linha][coluna] = leiaInt(f"Digite o número [{linha},{coluna}]: ")
             cont += 1
 
     '''Matriz formada e mostrada na tela'''
@@ -208,10 +210,5 @@ if opção == 5: #Executa a quinta opção do menu
             print(f"[{matriz[l][c]:^5}]",end=" ")
         print()
     mostraLinha(52)
-    except (IndexError):
-        mostraLinha(52)
-        print("Você digitou um valor inválido")
-        sleep(2)
-        print("O programa não pode continuar...")
         
 cabeçalho("<<<ENCERRADO>>>".center(47))
