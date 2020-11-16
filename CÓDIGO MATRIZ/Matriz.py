@@ -212,4 +212,5 @@ elif opção == 5: #Executa a quinta opção do menu
         print()
     mostraLinha(52)
         
+        
 cabeçalho("<<<ENCERRADO>>>".center(47))
