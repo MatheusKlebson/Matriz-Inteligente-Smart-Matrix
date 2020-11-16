@@ -187,7 +187,8 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"Octal de {num}: {oct(num)[2:]}")
         else:
             print("Número não encontrado")
-    
+
+
 elif opção == 5:
     matriz.clear()
     cabeçalho("              NOVA MATRIZ              ")
