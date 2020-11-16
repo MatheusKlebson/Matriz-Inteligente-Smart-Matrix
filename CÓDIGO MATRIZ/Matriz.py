@@ -192,6 +192,7 @@ elif opção == 4:  #Executa a quarta opção do menu
         sleep(2)
         print("O programa não pode continuar...")
 
+
 elif opção == 5: #Executa a quinta opção do menu
     matriz.clear()
     cabeçalho("              NOVA MATRIZ              ")
