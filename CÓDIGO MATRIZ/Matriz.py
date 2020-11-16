@@ -53,7 +53,7 @@ if opção == 1: #Executa a primeira opção do menu
         print(f"não existe")
 
 
-elif opção == 2: #Executa a segunda opção do menu
+if opção == 2: #Executa a segunda opção do menu
     escolha = int(input("Deseja analisar qual coluna? "))  #Pergunta ao usuário qual coluna irá pegar os valores
     '''Mostra coluna escolhida na tela'''
     print(f"COLUNA {escolha}: ",end="")
@@ -71,7 +71,7 @@ elif opção == 2: #Executa a segunda opção do menu
         print(f"não existe")
 
 
-elif opção == 3: #Executa a terceira opção do menu
+if opção == 3: #Executa a terceira opção do menu
     '''O usuário poderá ver um número especifico dá matriz, 
     digitando a posição que ele se encontra'''
     print("Deseja analisar qual posição? Exemplo: [0,0] ")
@@ -90,7 +90,7 @@ elif opção == 3: #Executa a terceira opção do menu
         print(f"Coluna indicada: não existe")
 
 
-elif opção == 4:  #Executa a quarta opção do menu
+if opção == 4:  #Executa a quarta opção do menu
     posições = [] #Lista para guardar as posições
     numeros = []  #Lista para guardar os valores
     try:
@@ -189,7 +189,7 @@ elif opção == 4:  #Executa a quarta opção do menu
             print("Número não encontrado")
 
 
-elif opção == 5:
+if opção == 5: #Executa a quinta opção do menu
     matriz.clear()
     cabeçalho("              NOVA MATRIZ              ")
     matriz = [[0,0,0],[0,0,0],[0,0,0]]
@@ -201,13 +201,13 @@ elif opção == 5:
             matriz[linha][coluna] = leiaInt(f"Digite o número na posição [{linha},{coluna}]")
             cont += 1
 
-'''Matriz formada e mostrada na tela'''
-cabeçalho("                 MATRIZ FORMADA                ")
-for l in range(0,3):
-    for c in range(0,3):
-        print(f"[{matriz[l][c]:^5}]",end=" ")
-    print()
-mostraLinha(52)
+    '''Matriz formada e mostrada na tela'''
+    cabeçalho("                 MATRIZ FORMADA                ")
+    for l in range(0,3):
+        for c in range(0,3):
+            print(f"[{matriz[l][c]:^5}]",end=" ")
+        print()
+    mostraLinha(52)
     except (IndexError):
         mostraLinha(52)
         print("Você digitou um valor inválido")
