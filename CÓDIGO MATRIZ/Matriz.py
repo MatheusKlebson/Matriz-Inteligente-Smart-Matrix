@@ -187,6 +187,26 @@ elif opção == 4:  #Executa a quarta opção do menu
                 print(f"Octal de {num}: {oct(num)[2:]}")
         else:
             print("Número não encontrado")
+    
+elif opção == 5:
+    matriz.clear()
+    cabeçalho("              NOVA MATRIZ              ")
+    matriz = [[0,0,0],[0,0,0],[0,0,0]]
+    '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
+    cont = 1
+    for linha in range(0,3):
+        for coluna in range(0,3):
+            print(f"[{linha},{coluna}]: {cont}")
+            matriz[linha][coluna] = leiaInt(f"Digite o número na posição [{linha},{coluna}]")
+            cont += 1
+
+'''Matriz formada e mostrada na tela'''
+cabeçalho("                 MATRIZ FORMADA                ")
+for l in range(0,3):
+    for c in range(0,3):
+        print(f"[{matriz[l][c]:^5}]",end=" ")
+    print()
+mostraLinha(52)
     except (IndexError):
         mostraLinha(52)
         print("Você digitou um valor inválido")
