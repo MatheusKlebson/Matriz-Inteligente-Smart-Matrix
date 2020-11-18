@@ -195,6 +195,7 @@ while True:
             print("O programa não pode continuar...")
             break
 
+    
     elif opção == 5: #Executa a quinta opção do menu
         matriz.clear()
         cabeçalho("              NOVA MATRIZ              ")
@@ -213,6 +214,9 @@ while True:
                 print(f"[{matriz[l][c]:^5}]",end=" ")
             print()
         mostraLinha(52)
-    elif opção == 6:
+    
+    
+    elif opção == 6: #Executa a sexta opção do menu
         break
+
 cabeçalho("<<<ENCERRADO>>>".center(47))
