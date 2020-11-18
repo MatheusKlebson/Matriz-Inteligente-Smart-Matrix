@@ -6,11 +6,10 @@ from time import sleep
 cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
 '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
-cont = 1
 for linha in range(0,3):
     for coluna in range(0,3):
-        matriz[linha][coluna] = cont
-        cont += 1
+        matriz[linha][coluna] = leiaInt(f"Digite o número [{linha},{coluna}]: ")
+        
 
 '''Matriz formada e mostrada na tela'''
 cabeçalho("                 MATRIZ FORMADA                ")
@@ -200,12 +199,11 @@ while True:
         matriz.clear()
         cabeçalho("              NOVA MATRIZ              ")
         matriz = [[0,0,0],[0,0,0],[0,0,0]]
-        '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
-        cont = 1
+        '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''''
         for linha in range(0,3):
             for coluna in range(0,3):
                 matriz[linha][coluna] = leiaInt(f"Digite o número [{linha},{coluna}]: ")
-                cont += 1
+                
 
         '''Matriz formada e mostrada na tela'''
         cabeçalho("                 MATRIZ FORMADA                ")
