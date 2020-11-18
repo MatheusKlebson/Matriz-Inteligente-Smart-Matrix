@@ -193,7 +193,7 @@ while True:
             print("Você digitou um valor inválido")
             sleep(2)
             print("O programa não pode continuar...")
-
+            break
 
     elif opção == 5: #Executa a quinta opção do menu
         matriz.clear()
