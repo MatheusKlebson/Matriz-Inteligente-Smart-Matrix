@@ -30,7 +30,6 @@ while True:
     "CRIAR OUTRA MATRIZ",
     "SAIR DO PROGRAMA"])
     
-
     '''Condicionais para executar a opção selecionada pelo usuário'''
 
     if opção == 1: #Executa a primeira opção do menu
@@ -217,4 +216,5 @@ while True:
     elif opção == 6: #Executa a sexta opção do menu
         break
 
+    sleep(2)
 cabeçalho("<<<ENCERRADO>>>".center(47))
