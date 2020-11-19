@@ -3,6 +3,7 @@ from matdef.matheus_calculo import *
 from time import sleep
 
 '''Montando a matriz'''
+
 cabeçalho("               MATRIZ INTELIGENTE              ")
 matriz = [[0,0,0],[0,0,0],[0,0,0]]
 '''[[1, 2, 3], [4, 5, 6], [7, 8, 9]]'''
@@ -10,8 +11,8 @@ for linha in range(0,3):
     for coluna in range(0,3):
         matriz[linha][coluna] = leiaInt(f"Digite o número [{linha},{coluna}]: ")
         
-
 '''Matriz formada e mostrada na tela'''
+
 cabeçalho("                 MATRIZ FORMADA                ")
 for l in range(0,3):
     for c in range(0,3):
