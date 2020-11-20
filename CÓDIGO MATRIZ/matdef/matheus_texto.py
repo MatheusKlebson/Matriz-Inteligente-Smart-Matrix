@@ -20,4 +20,3 @@ def menu(lista):
     mostraLinha(52)
     opc = matheus_calculo.leiaInt("Sua opção: ")
     return opc
-
