@@ -1,28 +1,36 @@
-# Matriz Inteligente 
- Projeto pessoal que permita fazer diversas operações usando uma matriz criada pelo proprio usuario.
-# **PROGRESSO DO PROJETO**
-TAREFAS
-=========================================
-1. - [x] FORMAR A MATRIZ
-2. - [X] MELHORAR VISUAL
-2. - [x] ADICIONAR MENU DE OPÇÕES
-3. - [x] ADICIONAR MAIS USABILIDADE COM O USUÁRIO
-5. - [ ] INTERATIVIDADE COM O MENU DE OPÇÕES
-8. - [ ] PUBLICAR O PROJETO DA MATRIZ NO GITHUB
-5. - [ ] TRADUZIR PARA O INGLÊS O CÓDIGO
-7. - [ ] TRADUZIR PARA O INGLÊS O CONTEÚDO DA MATRIZ E ADICIONAR OPÇÃO DE ESCOLHA DO IDIOMA
+# Funcionamento da matriz - Matrix functioning
 
+Primeiro momento: Usuário digita cada número na posição que ele desejar
 
-# Smart Matrix
- Personal project that allows to do several operations using a matrix created by the user.
-# ** PROJECT PROGRESS **
-TASKS
-===========================================
-1. - [x] FORM THE MATRIX
-2. - [X] IMPROVE LOOK
-2. - [x] ADD OPTIONS MENU
-3. - [x] ADD MORE USABILITY WITH USER
-5. - [ ] INTERACTIVITY WITH THE OPTIONS MENU
-8. - [ ] PUBLISH THE MATRIX PROJECT ON GITHUB
-5. - [ ] TRANSLATE THE CODE TO ENGLISH
-7. - [ ] TRANSLATE THE CONTENT OF THE MATRIX INTO ENGLISH AND ADD LANGUAGE CHOICE OPTION
+First moment: User types each number in the position he wants
+
+![Primeiro momento](https://user-images.githubusercontent.com/68394225/99865221-fd498d00-2b86-11eb-9ce4-13a52c966896.png)
+
+Segundo momento: É Formado sua matriz e um menu de opções
+
+Second: Your matrix is formed and an options menu
+
+![segundo momento](https://user-images.githubusercontent.com/68394225/99865321-9d071b00-2b87-11eb-9816-7ee4e333ea9c.png)
+
+O programa funcionará conforme solicitado
+
+The program will work as requested
+
+![momento de solitcitação](https://user-images.githubusercontent.com/68394225/99865437-64b40c80-2b88-11eb-8e61-e0ff287fb25d.png)
+
+Porém na quarta opção a duas condições: Você querer analisar um único número ou mais de um número, depedendo de qual escolher um menu diferente será gerado
+
+However in the fourth option in two conditions: You can analyze a single number or more than one number, depending on which to choose a different menu generated
+
+Analisando só um número:
+
+Analyzing just a number:
+
+![Analisando um numero](https://user-images.githubusercontent.com/68394225/99865512-02a7d700-2b89-11eb-8373-a2bd6202e0f7.png)
+
+Analisando só um número:
+
+Analyzing more than one number:
+
+![analisando mais de um número](https://user-images.githubusercontent.com/68394225/99865559-64684100-2b89-11eb-8de9-168c6ba29115.png)
+
