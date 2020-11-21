@@ -11,3 +11,7 @@ Segundo momento: É Formado sua matriz e um menu de opções
 Second: Your matrix is formed and an options menu
 
 ![segundo momento](https://user-images.githubusercontent.com/68394225/99865321-9d071b00-2b87-11eb-9816-7ee4e333ea9c.png)
+
+O programa funcionará conforme solicitado
+
+The program will work as requested
