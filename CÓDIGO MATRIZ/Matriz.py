@@ -115,7 +115,7 @@ while True:
                 "MENOR NÚMERO SELECIONADO",
                 "MOSTRAR TODOS OS PARES",
                 "MOSTRAR TODOS OS ÍMPARES",
-                "MOSTRAR DUAS LISTAS, UMA DE PARES E OUTRA DE ÍMPARES"])
+                "MOSTRAR DUAS LISTAS, \nUMA DE PARES E OUTRA DE ÍMPARES"])
                 if calcular_numeros == 1:
                     print(f"A soma de todos os números: {sum(numeros)}")
                 elif calcular_numeros == 2:
