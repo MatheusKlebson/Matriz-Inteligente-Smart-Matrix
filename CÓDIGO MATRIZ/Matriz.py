@@ -65,7 +65,7 @@ while True:
                     print(f"[{matriz[l][1]}]",end=' ')
                 elif escolha == 3:
                     print(f"[{matriz[l][2]}]",end=' ')
-            print()
+        print()
         '''Caso a opção digitada pelo usuário seja inválida'''
         if escolha > 3 or escolha <= 0:
             print(f"não existe")
