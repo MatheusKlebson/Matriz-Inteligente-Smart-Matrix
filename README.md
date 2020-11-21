@@ -32,6 +32,5 @@ Analisando só um número:
 
 Analyzing more than one number:
 
-
-
+![analisando mais de um número](https://user-images.githubusercontent.com/68394225/99865559-64684100-2b89-11eb-8de9-168c6ba29115.png)
 
