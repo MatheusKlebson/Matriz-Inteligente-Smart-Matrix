@@ -18,8 +18,11 @@ The program will work as requested
 
 ![momento de solitcitação](https://user-images.githubusercontent.com/68394225/99865437-64b40c80-2b88-11eb-8e61-e0ff287fb25d.png)
 
-Porém na quarta opção a duas condições: Você querer analisar um único número ou mais de um número:
+Porém na quarta opção a duas condições: Você querer analisar um único número ou mais de um número, depedendo de qual escolher um menu diferente será gerado
+
+However in the fourth option in two conditions: You can analyze a single number or more than one number, depending on which to choose a different menu generated
 
 Analisando só um número:
 
+![Analisando um numero](https://user-images.githubusercontent.com/68394225/99865512-02a7d700-2b89-11eb-8373-a2bd6202e0f7.png)
 
