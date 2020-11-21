@@ -34,3 +34,10 @@ Analyzing more than one number:
 
 ![analisando mais de um número](https://user-images.githubusercontent.com/68394225/99865559-64684100-2b89-11eb-8de9-168c6ba29115.png)
 
+O programa vai ser repetir, até a opção de "Sair do programa" se selecionada
+
+The program will be repeated until the "Sair do programa" option is chosen
+
+![fim do programa](https://user-images.githubusercontent.com/68394225/99878236-c0ab7f00-2be2-11eb-8d89-a2de5bebacfd.png)
+
+
