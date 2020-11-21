@@ -18,3 +18,8 @@ The program will work as requested
 
 ![momento de solitcitação](https://user-images.githubusercontent.com/68394225/99865437-64b40c80-2b88-11eb-8e61-e0ff287fb25d.png)
 
+Porém na quarta opção a duas condições: Você querer analisar um único número ou mais de um número:
+
+Analisando só um número:
+
+
