@@ -24,5 +24,14 @@ However in the fourth option in two conditions: You can analyze a single number 
 
 Analisando só um número:
 
+Analyzing just a number:
+
 ![Analisando um numero](https://user-images.githubusercontent.com/68394225/99865512-02a7d700-2b89-11eb-8373-a2bd6202e0f7.png)
+
+Analisando só um número:
+
+Analyzing more than one number:
+
+
+
 
