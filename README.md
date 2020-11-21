@@ -8,7 +8,7 @@ TAREFAS
 2. - [x] ADICIONAR MENU DE OPÇÕES
 3. - [x] ADICIONAR MAIS USABILIDADE COM O USUÁRIO
 5. - [x] INTERATIVIDADE COM O MENU DE OPÇÕES
-8. - [] PUBLICAR O PROJETO DA MATRIZ NO GITHUB
+8. - [ ] PUBLICAR O PROJETO DA MATRIZ NO GITHUB
 
 # Smart Matrix
  Personal project that allows to do several operations using a matrix created by the user.
