@@ -1,6 +1,9 @@
 from matdef import matheus_texto
 
 def leiaInt(mensagem):
+    '''
+    PARAM mensagem: Recebe a string que ficará na função leiaInt que substitui a função int(input())
+    '''
     while True:
         try:
             num = int(input(mensagem))
