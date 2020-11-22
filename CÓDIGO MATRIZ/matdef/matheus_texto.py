@@ -11,10 +11,15 @@ def cabeçalho(txt):
 
 
 def mostraLinha(tamanho):
-    '''Escreve uma linha na tela'''
+    '''
+    PARAM tamanho: Escreve uma linha na tela
+    '''
     print("="*tamanho)
 
 def menu(lista):
+    '''
+    PARAM lista: Recebe uma list e cada elemento da lista será uma opção do menu
+    '''
     for i,opções in enumerate(lista):
         print(f"{i + 1} - {opções}")
     mostraLinha(52)
