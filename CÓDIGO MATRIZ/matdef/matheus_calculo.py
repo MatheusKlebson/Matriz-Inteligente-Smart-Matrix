@@ -18,6 +18,9 @@ def leiaInt(mensagem):
 
 
 def leiaFloat(mensagem):
+    '''
+    PARAM mensagem: Recebe a string que ficará na função leiaFloat que substitui a função float(input())
+    '''
     while True:
         try:
             num = float(input(mensagem))
@@ -31,6 +34,9 @@ def leiaFloat(mensagem):
             break
 
 def leiaDinheiro(msg):
+    '''
+    PARAM msg: recebe a mensagem que ficará na opção que receberá um input do usuário.
+    '''
     validar = False
     while validar == False:
         preço = str(input(msg)).strip().replace(",",".")
@@ -42,6 +48,9 @@ def leiaDinheiro(msg):
 
 
 def factorial(calculo):
+    '''
+    PARAM calculo: recebe o valor que iniciará a contagem para chega no valor final do fatorial
+    '''
     matheus_texto.mostraLinha(52)
     f = 1
     for cont in range(calculo,0,-1):
