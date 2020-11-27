@@ -26,7 +26,7 @@ Analisando só um número:
 
 Analyzing just a number:
 
-![Analisando um numero](https://user-images.githubusercontent.com/68394225/99865512-02a7d700-2b89-11eb-8373-a2bd6202e0f7.png)
+![analisando mais de um número](https://user-images.githubusercontent.com/68394225/100399157-74bc6800-3030-11eb-8afb-9702f30568c3.png)
 
 Analisando só um número:
 
