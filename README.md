@@ -32,7 +32,7 @@ Analisando só um número:
 
 Analyzing more than one number:
 
-![analisando mais de um número](https://user-images.githubusercontent.com/68394225/99865559-64684100-2b89-11eb-8de9-168c6ba29115.png)
+![analisando mais de um número](https://user-images.githubusercontent.com/68394225/100399157-74bc6800-3030-11eb-8afb-9702f30568c3.png)
 
 O programa vai ser repetir, até a opção de "Sair do programa" se selecionada
 
